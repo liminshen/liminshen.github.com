@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script >
+        function Person() {
+            this.name = 111;
+            this.job = 222;
+        }
+        function Man() {
+            this.sex = 'man';
+        }
+        Object.create(Man.prototype,new Person);
+        Man.prototype.constructor = new Person();
+        var sam = new Man('sam','banzhuang');
+        console.log(sam);
+    </script>
+</body>
+</html>
