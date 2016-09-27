@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="jquery.js"></script>
+	<script>
+		$.ajax({
+			url: './text.md',
+			type: 'get',
+		})
+		.done(function(result) {
+			console.log(result);
+			console.log("success");
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
+		
+	</script>
+</body>
+</html>
