@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .circle1,.circle2{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateZ(0);
+        }
+        .circle2{
+            background: #f90;
+            width: 300px;
+            height: 300px;
+            top: 300px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle1 c"></div>
+    <div class="circle2 c"></div>
+    <script>
+        var cs = document.querySelectorAll('.c');
+        
+        var coordinates = [];
+        function DragAcrash (el,index){
+            this._el = el;
+            this.params = {
+                top : 0,
+                left : 0,
+                currentX : 0,
+                currentY : 0,
+                flag : false,
+                disX : 0,
+                disY : 0,
+                _id : 'X' + new Date().getTime(),
+                _index : index,
+                _r : parseInt(getCss(this._el,'width'))/2
+            };
+            this.coordinate = coordinates[index] = {x:0,y:0,r:this.params._r,el:this._el,BgColor:getCss(this._el,'backgroundColor')};
+            this.init();
+        };
+        DragAcrash.prototype = {
+            constructor : DragAcrash,
+            init : function () {
+                this.mousedown();
+            },
+            mousedown : function () {
+                var self = this;
+                this._el.onmousedown = function (e) {
+                    var _l = parseInt(getCss(self._el,'left'));
+                    var _t = parseInt(getCss(self._el,'top'));
+                    self.params.disX = e.clientX-_l;
+                    self.params.disY = e.clientY-_t;
+                    self.params.flag = true;
+                    function _fnMove(e) {
+                        var _l = e.clientX-self.params.disX;
+                        var _t = e.clientY-self.params.disY;
+                        self.coordinate.x = _l+self.params._r;
+                        self.coordinate.y = _t+self.params._r;
+                        self._el.style.left = _l+'px';
+                        self._el.style.top = _t+'px';
+                        self.testCrash(self.params._index);
+                    }
+                    function _fnUp(e) {
+                        document.onmousemove = null;
+                        document.onmousemove = null;
+                        self.params.flag = false;
+                    }
+                    document.onmousemove = _fnMove;
+                    document.onmouseup = _fnUp;
+                };
+            },
+            testCrash : function (index) {
+                var _coordinate = coordinates[index];
+                for (var i = 0; i < coordinates.length; i++) {
+                    if(i==index){
+                        continue;
+                    }
+                    var _subX = _coordinate.x - coordinates[i].x;
+                    var _subY = _coordinate.y - coordinates[i].y;
+                    var _x2 = _subX*_subX;
+                    var _y2 = _subY*_subY;
+                    var _distantR = Math.sqrt(_x2+_y2);
+                    var _addR = _coordinate.r + coordinates[i].r;
+                    if(_addR>=_distantR){
+                        coordinates[i].el.style.backgroundColor = 'red';
+                    }else{
+                        coordinates[i].el.style.backgroundColor = coordinates[i].BgColor;
+                    }
+                }
+            }
+        };
+        new DragAcrash(cs[0],0);
+        new DragAcrash(cs[1],1);
+        function getCss(o,key){
+            return o.currentStyle? o.currentStyle[key] : document.defaultView.getComputedStyle(o,false)[key];   
+        };
+        
+    </script>
+</body>
+</html>
