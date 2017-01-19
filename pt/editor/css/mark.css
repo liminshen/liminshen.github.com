@@ -1,0 +1,885 @@
+body,html{
+	font-family:"Microsoft YaHei" !important;
+}
+.activityBox {
+	height: auto;
+	overflow: hidden
+}
+.activityBox .add-btn,.activityBox .save-btn,.activityBox .submit-btn{
+	width:45px;
+	height:45px;
+	outline:none;
+}
+.activityBox .add-btn{
+	background: url("../images/icon-head-add.png") no-repeat 0 0;
+	background-size:90% 90%;
+	position: relative;
+	right:-10px;
+}
+.activityBox .save-btn{
+	background: url("../images/icon-head-save.png") no-repeat 0 0;
+	background-size:80% 80%;
+	position: relative;
+	right:-10px;
+}
+.activityBox .submit-btn{
+	background: url("../images/icon-head-submit.png") no-repeat 0 0;
+	background-size:80% 80%;
+	position: relative;
+	right:-13px;
+}
+.activityBox .mw320 {
+	width: 30%;
+	height: auto;
+	margin-right: 3%;
+	vertical-align: top
+}
+
+.activityBox .mw30 {
+	width: 30%;
+	height: auto;
+	margin-right: 3%;
+	vertical-align: top
+}
+.activityBox .mwl30 {
+	width:26%;
+	height: auto;
+	margin-right:4%;
+	vertical-align: top
+}
+.activityBox .mwl40 {
+	width:36%;
+	height: auto;
+	margin-right:4%;
+	vertical-align: top
+}
+
+
+.activityBox .mw40 {
+	width: 40%;
+	height: auto;
+	margin-right:3%;
+	vertical-align: top
+}
+
+.activityBox .mw20 {
+	width: 20%;
+	height: auto;
+	margin-right: 3%;
+	vertical-align: top
+}
+
+.activityBox .h1 {
+	font: 20px/36px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #383a4c;
+	margin-top: 6px;
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #383a4c;
+	text-indent: 3px
+}
+
+.activityBox .h1 a {
+	color: #383a4c;
+	text-decoration: none
+}
+
+.activityBox .ul01 li {
+	height: auto;
+	overflow: hidden;
+	padding:6px;
+	border-bottom: 1px dashed #999999
+}
+
+.activityBox .ul01 li:hover,.activityBox .ul01 li:active {
+	background: rgba(151, 151, 151, 0.3)
+}
+
+.activityBox .ul01 li p {
+	height: auto;
+	overflow: hidden;
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #343434
+}
+
+.activityBox .ul01 li p a {
+	color: #343434;
+	text-decoration: none;
+	font-size:16px;
+	font-family:"Microsoft YaHei";
+}
+.activityBox .ul01 li p label {
+	font-weight:normal;
+	font-family:"Microsoft YaHei";
+	color: #9e9e9e;
+	font-size:14px;
+}
+.activityBox .ul01 li p span {
+	font-weight:normal;
+	font-family:"Microsoft YaHei";
+	color: #9e9e9e;
+	display:block;
+	font-size:14px;
+	position: relative;
+	top: -2px;
+}
+
+.activityBox .ul01 li .btns {
+	height: 20px;
+	overflow: hidden;
+	font-size:12px;
+	line-height:20px;
+	/*font: 12px/20px SimHei, Helvetica, Arial, Verdana, sans-serif;*/
+	margin-top: 5px
+}
+
+.activityBox .ul01 li .btns a {
+	color: #fff;
+	background: #64a0d7;
+	padding: 0 8px;
+	display: inline-block;
+	margin-right: 6px;
+	vertical-align: top;
+	border-radius: 3px
+}
+
+.activityBox .ul01.pic li {
+	padding-left: 82px;
+	height: 83px;
+	overflow: hidden;
+	position: relative
+}
+
+.activityBox .ul01.pic li .img {
+	width: 65px;
+	height: 62px;
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #e4e4e4;
+	position: absolute;
+	left: 2px;
+	top: 10px
+}
+
+.activityBox .ul01.pic li .img img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+.activityBox .text {
+	height: auto;
+	overflow: hidden;
+	padding-left: 120px;
+	position: relative
+}
+
+.activityBox .text label {
+	height: 20px;
+	font: 14px/20px "微软雅黑", Helvetica, Microsoft YaHei;
+	color: #3b3b3b;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 110px;
+	text-align: right;
+	padding-right: 10px;
+	display: inline-block
+}
+
+.activityBox .text textarea {
+	width: 100%;
+	border: 1px solid #e4e4e4;
+	outline: none;
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #343434;
+	box-sizing: border-box;
+	padding: 10px
+}
+
+.activityBox .text textarea::-webkit-input-placeholder {
+	font: 18px/100px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #d8dde4;
+	text-align: center
+}
+
+.activityBox div.upload {
+	height: 32px;
+	overflow: hidden;
+	position: relative;
+	padding-left: 120px
+}
+
+.activityBox div.upload .t {
+	font: 14px/32px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #3b3b3b;
+	height: auto;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	width: 110px;
+	padding-right: 10px;
+	text-align: right;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.activityBox div.upload .label {
+	padding: 0;
+	width: 112px;
+	font: 14px/30px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #8d8d8d;
+	height: 32px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding-right: 7px;
+	background: url("../images/jr.jpg") no-repeat right top
+}
+
+.activityBox div.upload .label em {
+	border: 1px solid #e7e7eb;
+	border-right: 0;
+	height: 32px;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	font-style: normal
+}
+
+.activityBox div.upload span.upload {
+	background: #ebeef1;
+	border: 1px solid #d8dde4;
+	border-radius: 4px;
+	display: inline-block;
+	width: 92px;
+	text-align: center;
+	font: 14px/30px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #383a4c;
+	position: relative;
+	cursor: pointer;
+	margin-left: 3px;
+	vertical-align: top
+}
+
+.activityBox div.upload span.upload input {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.activityBox div.timer {
+	height: 36px;
+	width: 200px;
+	display: inline-block;
+	border: 1px solid #d2d2d2;
+	border-radius: 5px
+}
+
+.activityBox div.timer input {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	text-indent: 5px;
+	background: url("../images/timer.jpg") no-repeat 174px center
+}
+
+.activityBox div.inputBox {
+	height: 36px;
+	width: 200px;
+	display: inline-block;
+	border: 1px solid #d2d2d2;
+	border-radius: 5px
+}
+
+.activityBox div.inputBox input {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	text-indent: 5px;
+	background: none
+}
+
+.activityBox div.inputBox.des {
+	border: 0;
+	font: 14px/36px "微软雅黑", Helvetica, Microsoft YaHei
+}
+
+.activityBox .activityCon {
+	height: auto;
+	overflow: hidden
+}
+
+.activityBox .activityCon .t {
+	height: auto;
+	overflow: hidden
+}
+
+.activityBox .activityCon .t h3 {
+	font: 14px/24px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #343434;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px
+}
+
+.activityBox .activityCon .t h3 a {
+	color: #343434
+}
+
+.activityBox .activityCon .t div.pic {
+	height: 64px;
+	overflow: hidden;
+	position: relative;
+	padding-left: 79px;
+	margin-top: 5px
+}
+
+.activityBox .activityCon .t div.pic span.img {
+	width: 67px;
+	height: 64px;
+	overflow: hidden;
+	border: 1px solid #e4e4e4;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block
+}
+
+.activityBox .activityCon .t div.pic span.img img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+.activityBox .activityCon .t div.pic p {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #343434;
+	height: auto;
+	overflow: hidden;
+	margin-top: 2px
+}
+
+.activityBox .activityCon .t div.pic p a {
+	color: #343434
+}
+
+.activityBox .activiyEidt {
+	height: auto;
+	overflow: hidden;
+	padding-left: 78px;
+	position: relative;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #999999
+}
+
+.activityBox .activiyEidt span.lableTxt {
+	width: 78px;
+	height: auto;
+	overflow: hidden;
+	display: inline-block;
+	font: 14px/26px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #3b3b3b;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: right
+}
+
+.activityBox .activiyEidt p {
+	font: 14px/26px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #3b3b3b;
+	height: auto;
+	overflow: hidden;
+	vertical-align: top
+}
+
+.activityBox .activiyEidt p a {
+	color: #3b3b3b
+}
+
+.activityBox .activiyMess {
+	height: auto;
+	overflow: hidden;
+	margin-right:4px;
+	/*margin-top: 15px*/
+}
+
+.activityBox .activiyMess ul li {
+	height: auto;
+	overflow: hidden;
+	color: #343434;
+	text-decoration: none;
+	font-size:16px;
+	border-bottom:1px dashed #999999;
+	margin-bottom:0;
+	padding:17px 0px;
+}
+
+.activityBox .activiyMess ul li span {
+	color: #999999;
+	display: inline-block;
+	vertical-align: top;
+	height: auto;
+	overflow: hidden;
+	margin-right: 20px;
+	width: 100px;
+	text-align: right
+}
+
+.activityBox .activiyMess ul li a {
+	color: #383a4c;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top
+}
+
+.activityBox .labelBox {
+	position: relative;
+	padding-left: 120px
+}
+
+.activityBox .labelBox button.btn {
+	margin-left: 0
+}
+
+.activityBox .labelBox span.label {
+	width: 110px;
+	height: 20px;
+	padding-right: 10px;
+	font: 14px/20px "微软雅黑", Helvetica, Microsoft YaHei;
+	color: #3b3b3b;
+	text-align: right;
+	position: absolute;
+	padding: 0;
+	left: 0;
+	top: 0
+}
+
+.alertBox {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 42px 0 40px 50px;
+	background: rgba(0, 0, 0, 0.6);
+	display: none
+}
+
+.alertBox .conBox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #ffffff;
+	box-sizing: border-box;
+	padding: 0 20px
+}
+
+.alertBox .conBox div.r {
+	width: 60%;
+	height: 100%;
+	float: right
+}
+
+.alertBox .conBox div.l {
+	width: 37%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+	border-right: 1px dashed #3b3b3b
+}
+
+.alertBox .conBox .h1 {
+	height: 40px;
+	font: 20px/40px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	color: #000;
+	overflow: hidden
+}
+
+.alertBox .conBox .ul02 li {
+	width: 322px;
+	margin-left: 8px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-top: 24px;
+	display: inline-block;
+	padding-top: 101px
+}
+
+.alertBox .conBox .ul02 li span.img {
+	width: 86px;
+	height: 101px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid #a9a8b2;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.alertBox .conBox .ul02 li span.img img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+.alertBox .conBox .ul02 li .w220 {
+	width: 220px;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.alertBox .conBox .ul02 li h6 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul02 li h6 a {
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul02 li p.p1 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	margin-top: 2px;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul02 li p.p1 a {
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul02 li p.p2 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul02 li p.p2 a {
+	color: #53b5c1;
+	text-decoration: underline
+}
+
+.alertBox .conBox .ul02 li div.btn {
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+	height: 24px;
+	margin-top: 2px
+}
+
+.alertBox .conBox .ul02 li div.btn a {
+	width: 62px;
+	height: 22px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 0;
+	background: #424458;
+	color: #ffffff;
+	text-align: center;
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif
+}
+
+.alertBox .conBox .ul03 li {
+	width: 129px;
+	margin-right: 10px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-top: 24px;
+	padding-right: 10px;
+	padding-top: 10px
+}
+
+.alertBox .conBox .ul03 li span.img {
+	width: 119px;
+	height: 140px;
+	overflow: hidden;
+	display: inline-block
+}
+
+.alertBox .conBox .ul03 li span.img img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+.alertBox .conBox .ul03 li h6 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul03 li h6 a {
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul03 li p.p1 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	margin-top: 2px;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul03 li p.p1 a {
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul03 li p.p2 {
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	height: auto;
+	overflow: hidden;
+	color: #3b3b3b
+}
+
+.alertBox .conBox .ul03 li p.p2 a {
+	color: #53b5c1;
+	text-decoration: underline
+}
+
+.alertBox .conBox .ul03 li div.btn {
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+	height: 24px;
+	margin-top: 2px
+}
+
+.alertBox .conBox .ul03 li div.btn a {
+	width: 62px;
+	height: 22px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 0;
+	background: #424458;
+	color: #ffffff;
+	text-align: center;
+	font: 14px/22px SimHei, Helvetica, Arial, Verdana, sans-serif;
+	text-decoration: none
+}
+
+.alertBox .conBox .ul03 li span.del {
+	width: 32px;
+	height: 32px;
+	background: url("../images/del.png") no-repeat center;
+	background-size: contain;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer
+}
+
+.my_btnBox {
+	position: relative;
+	min-height: 34px
+}
+
+.my_btnBox .my_btn {
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	display: inline-block;
+	z-index: 100
+}
+
+.my_btnBox .my_btn.my_btn_pic1 {
+	background: url("../images/u109.png") no-repeat center;
+	background-size: contain
+}
+
+.my_btnBox .my_btn.my_btn_pic2 {
+	background: url("../images/u34.png") no-repeat center;
+	background-size: contain
+}
+
+.my_btnBox .my_btn.my_btn_pic3 {
+	background: url("../images/u61.png") no-repeat center;
+	background-size: contain
+}
+
+.my_btnBox .my_btn.my_btn_pic4 {
+	background: url("../images/u79.png") no-repeat center;
+	background-size: contain
+}
+
+div.lableBox {
+	height: 24px;
+	overflow: hidden;
+	margin-top: 5px
+}
+
+div.lableBox a {
+	margin-right: 5px
+}
+
+.m0 {
+	margin: 0
+}
+
+.p0 {
+	padding: 0
+}
+
+.mt10 {
+	margin-top: 10px
+}
+
+.mt30 {
+	margin-top: 30px
+}
+
+.mrl10 {
+	margin: 0 10px
+}
+
+
+
+.frame{
+    /*margin:1px;*/
+    /*border:1px solid #ccc;*/
+    /*padding:10px;*/
+}
+.frame .market-plan{
+    /*position: fixed;left:0;*/
+    /*border:1px solid green;*/
+}
+.frame .iframe-box{
+    /*margin-left:31%;*/
+    /*border:1px solid red;*/
+    /*width:37%;*/
+}
+.frame .statistics{
+    /*position:fixed;*/
+    /*right:0;*/
+    /*border:1px solid blue;*/
+}
+.frame .list-group-item{
+    border:none;
+    padding:auto 0;
+    overflow:hidden;
+}
+.frame .list-group-item span{
+    width:80%;
+    float: left;
+}
+.frame .list-group-item em{
+    font-weight:normal;
+    font-style: normal;
+    width:20%;
+    float: left;
+    text-align:right;
+}
+.frame .list-group-item-text{
+    overflow: hidden;
+}
+.frame .task{
+    padding:9px 1% 9px 2%;
+    overflow: hidden;
+    border-bottom:1px dashed #999999;
+}
+.frame .task img{
+    width:45px;
+    height:45px;
+}
+.frame .task>.pull-left{
+    margin-right:10px;
+}
+.frame .task .task-body{
+    color: #3e3a39;
+    height:45px;
+}
+.frame .task>.pull-right{
+    width:15%;
+	text-decoration:none;
+}
+.frame .task>.pull-right span{
+    color: #9e9e9e;
+    display:block;
+    font-size:14px;
+    line-height:24px;
+    text-align:right;
+}
+.frame .task-body{
+    display:table;
+}
+.frame .task-body .wrap{
+    display: table-cell;
+    vertical-align:middle;
+}
+.frame .task-body .wrap p{
+    font-size:14px;
+    margin:0;
+}
+.frame .task-body .wrap span{
+    color: #9e9e9e;
+    font-size:14px;
+}
+.frame .pull-right{
+	font-weight:normal;
+}
+
+
+/*配置管理*/
+.frame .list-config .list-group-item{
+    padding-left:50px;
+}
+.frame .list-config .list-config-edit.list-group-item{
+    background:url("../images/icon-config-edit.png") no-repeat left center;
+}
+.frame .list-config .list-config-mark.list-group-item{
+    background:url("../images/icon-config-mark.png") no-repeat left center;
+}
+.frame .list-config .list-config-product.list-group-item{
+    background:url("../images/icon-config-product.png") no-repeat left center;
+}
+.frame .list-config .list-config-ads.list-group-item{
+    background:url("../images/icon-config-ads.png") no-repeat left center;
+}
+.frame .list-config .list-config-gift.list-group-item{
+    background:url("../images/icon-config-gift.png") no-repeat left center;
+}
+.frame .list-config .list-config-team.list-group-item{
+    background:url("../images/icon-config-team.png") no-repeat left center;
+}
+.frame .list-config .list-config-info.list-group-item{
+    background:url("../images/icon-config-info.png") no-repeat left center;
+}
+.frame .list-config .list-config-website.list-group-item{
+    background:url("../images/icon-config-website.png") no-repeat left center;
+}
+.frame .list-config .list-config-set.list-group-item{
+    background:url("../images/icon-config-set.png") no-repeat left center;
+}
+.frame .list-config .list-config-vip.list-group-item{
+    background:url("../images/icon-config-vip.png") no-repeat left center;
+}

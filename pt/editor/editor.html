@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mark.css">
+    <link rel="stylesheet" href="./css/publish.css">
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/tether/1.4.0/js/tether.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/require.js/2.3.2/require.js"></script>
+    <link rel="stylesheet" href="./css/sam_main.css">
+</head>
+<body>
+<div style="width:100%;height:100%;background-color:#fff;padding:1%;">
+    <div class="basicCon" style="border:1px solid #d9dee4;">
+        <div ng-view="" class="ng-scope">
+            <!--<link rel="stylesheet" href="css/marketing.css" xmlns="http://www.w3.org/1999/html" class="ng-scope">-->
+            <meta http-equiv="Pragma" content="no-cache" class="ng-scope">
+            <meta http-equiv="Cache-Control" content="no-cache" class="ng-scope">
+            <meta http-equiv="Expires" content="0" class="ng-scope">
+            <div class="activityBox ng-scope" id="activityBox">
+                <div class="box"
+                     style="position:fixed;width:92%;background-color:#fff;padding:20px 2px 0 20px;z-index:100;">
+                    <div class="mwl30 fl">
+                        <h2 class="h1">工作计划
+                            <button type="button" class="btn  fr add-btn" id="addForm"
+                                    style="background-image: none;"></button>
+                        </h2>
+                    </div>
+                    <div class="mwl40 fl">
+                        <h2 class="h1">文章编辑
+                            <button type="button" class="btn fr add-btn" id="saveForm"></button>
+                        </h2>
+                    </div>
+                    <div class="mwl30 fl">
+                        <h2 class="h1">
+                            文章模板
+                            <button type="button" class="btn fr save-btn chooseThemeBtn" id="saveForm"></button>
+
+                        </h2>
+                    </div>
+                </div>
+                <ul class="list-group themelist">
+                    <!--<li class="list-group-item">Cras justo odio</li>-->
+                </ul>
+                <div class="box" style="margin-top:80px;width:100%;padding:0 20px;overflow:hidden;padding-right:1px;">
+                    <div class="mwl30 fl">
+                        <ul class="ul01">
+                            <!-- ngRepeat: item in planList -->
+                            <li ng-repeat="item in planList" data-findcode="0001" data-formcode=""
+                                class="marketingList ng-scope">
+                                <a href="../eventMangement/findEventInfoForm?findCode=0001" class="fl ng-binding"
+                                   target="tplEvent">测试话动2
+                                    <p>
+                                        <label class="fl ng-binding">2016-11-22 18:50:44</label>
+                                        <span class="fr">开始</span>
+                                    </p>
+                                </a>
+                            </li><!-- end ngRepeat: item in planList -->
+                        </ul>
+                    </div>
+                    <div class="mwl40 fl">
+                        <div class="activityCon" id="findEventDetail" style="position: relative;left:-18px;">
+
+                        </div>
+                    </div>
+                    <div class="mwl30 fl row frame">
+
+                        <div class="activiyMess">
+                            <ul id="findEventStatis"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require(['./js/main.js?t=' + new Date().getTime()], function () {
+    });
+</script>
+</body>
+</html>

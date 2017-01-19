@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../rem.js"></script>
+    <link rel="stylesheet" href="../../css/mobilereset.css?t=1">
+    <link rel="stylesheet" href="../../css/theme1.css?t=4">
+</head>
+<body>
+    <div
+        data-keys="['theme1_tpl1_value1','theme1_tpl1_src1','theme1_tpl1_src2','theme1_tpl1_src3','theme1_tpl1_src4','theme1_tpl1_src5','theme1_tpl1_value2','theme1_tpl1_value123','theme1_tpl1_href1']"
+        class="thmeme1_tpl1_container"
+    >
+        <img :src="theme1_tpl1_src1" alt="" class="uploadBtn imgClass">
+        <img :src="theme1_tpl1_src2" alt="" class="uploadBtn imgClass">
+        <img :src="theme1_tpl1_src3" alt="" class="uploadBtn imgClass">
+        <img :src="theme1_tpl1_src4" alt="" class="uploadBtn imgClass">
+        <a :href="theme1_tpl1_href1" v-model="theme1_tpl1_value123" class="addressBtn">test</a>
+        <div class="class">更多图片</div>
+        <img :src="theme1_tpl1_src5" alt="" class="uploadBtn theme1_tpl1_img">
+
+        <textarea v-model="theme1_tpl1_value1" class="theme1_tpl1_p">bhaoishdoais</textarea>
+        <textarea v-model="theme1_tpl1_value2" class="theme1_tpl1_p">bhaoishdoais</textarea>
+    </div>
+<!--
+    <img :src="theme1_tpl1_src5" alt="" class="uploadBtn theme1_tpl1_img">
+        可编辑图片用这个标签。uploadBtn必须保留，其他class自定义，实现psd用背景图定位，不用src
+    <textarea v-model="theme1_tpl1_value2" class="theme1_tpl1_p">bhaoishdoais</textarea>
+        可编辑文本用这个标签，class自定义即可
+    <a :href="theme1_tpl1_href1" v-model="theme1_tpl1_value123" class="addressBtn">test</a>
+        可编辑图片用这个标签。addressBtn必须保留，其他class自定义
+    v-model 和 :src 这两个属性是是必须有的，命名规范 theme1_tpl1_(src1/value1)
+        theme1 主题名字，自定义即可
+        tpl1  是模板的就用tpl 数字叠加
+        图片是src1  文本是value1 a标签地址用href1 后面数字叠加,保持整个psd切出来的模块是唯一性
+-->
+</body>
+</html>
